@@ -11,11 +11,12 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/page404',
+      path: '/:pathMatch(.*)*',
       name: 'page404',
       component: Page404
     }
-  ]
+  ],
+
 })
 
 export default router
