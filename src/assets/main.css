@@ -1,13 +1,14 @@
 @font-face {
-    font-family: Jura;
+    font-family: 'Jura';
     src: url(./font/Jura-Regular.woff);
-};
-
-@font-face {
-    font-family: Robot9000;
-    src: url(./font/Robot9000-MVxZx.woff);
+    src: url(./font/Jura-Regular.ttf)
 }
 
+@font-face {
+    font-family: 'Robot';
+    src: url(./font/Robot9000-MVxZx.woff);
+    src: url(./font/Robot9000-MVxZx.ttf);
+}
 
 body{
     background-color: whitesmoke;

@@ -1,7 +1,9 @@
 <script setup>
-
+  import About from '@/components/About.vue';
 </script>
 
 <template>
-  <h1>coucou</h1>
+  <main>
+    <About/>
+  </main>
 </template>

@@ -7,9 +7,9 @@
             <router-link to="/" ><img src="../assets/img/Image1.png" alt="Un gentil alien qui nous salut avec une secoupe volante dans la main" class="image"></router-link>
             <div class="nav_links">
                 <ul>
-                    <router-link><li>Présentation</li></router-link>
-                    <router-link><li>Projets</li></router-link>
-                    <router-link><li>Contact</li></router-link>
+                    <router-link to="/#about"><li>Présentation</li></router-link>
+                    <router-link to="/#project"><li>Projets</li></router-link>
+                    <router-link to="/#contact"><li>Contact</li></router-link>
                 </ul>
             </div>
         </nav>
@@ -28,22 +28,25 @@
 }
 
 .image{
-    width:100px;
+    position:fixed;
+    top: 20px;
+    left: 50px;
+    width:75px;
     border: solid 1px white;
     border-radius: 50%;
 }
 
 
-.nav_links ul{
+ul{
     display: flex;
     list-style: none;
 }
 
-.nav_links ul a{
+a{
     text-decoration: none;
 } 
 
-.nav_links ul a li{
+li{
     color: black;
     font-family: 'Jura';
     font-size: 1.5rem;
@@ -51,7 +54,7 @@
     margin:0 20px;
 }
 
-.nav_links ul a li::after{
+li::after{
     content: "";
     display: block;
     margin: auto;
@@ -61,7 +64,7 @@
     transition: width 0.4s;
 }
 
-.nav_links ul a li:active::after{
+li:active::after{
     width: 100%;
     background-color:black ;
 }
@@ -95,7 +98,7 @@
         justify-items: center;
     }
     
-    .nav_links ul a li{
+    li{
         margin-bottom: 20px;
     }
     
