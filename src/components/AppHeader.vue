@@ -5,8 +5,8 @@
 <template>
         <nav class="navbar">
             <router-link to="/" ><img src="../assets/img/Image1.png" alt="Un gentil alien qui nous salut avec une secoupe volante dans la main" class="image"></router-link>
-            <div class="nav_links">
-                <ul>
+            <div class="nav__div">
+                <ul class="nav__links">
                     <router-link to="/#about"><li>Présentation</li></router-link>
                     <router-link to="/#project"><li>Projets</li></router-link>
                     <router-link to="/#contact"><li>Contact</li></router-link>
@@ -37,7 +37,7 @@
 }
 
 
-ul{
+.nav__links{
     display: flex;
     list-style: none;
 }
@@ -64,7 +64,7 @@ li::after{
     transition: width 0.4s;
 }
 
-li:active::after{
+li:hover::after{
     width: 100%;
     background-color:black ;
 }
@@ -81,7 +81,7 @@ li:active::after{
         border: solid 1px rgba(181, 27, 27, 0.379);
     }
 
-    .nav_links{
+    .nav__div{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -91,7 +91,7 @@ li:active::after{
         height: 100vh;
     }
 
-    .nav_links ul{
+    .nav__links{
         display: flex;
         flex-direction: column;
         align-items: center;
