@@ -1,34 +1,15 @@
 <script setup>
  defineProps({
-  title: {
-    type: String
-  },
-  description: {
-    type: String
-  },
-  techno: {
-    type: String
-  }
+    titreProjet:{
+        type: String
+    }
 })
 </script>
 
 <template>
     <div class="projet__type">
-        <h3 class="titre3">
-            {{ title }}
-        </h3>
-        <span>
-            {{ description }}
-        </span>
-        <br/>
-        <span>
-            {{ techno }}
-        </span>
-        <br/>
-        <slot>
-
-        </slot>
-
+        <h3 class="titre__projet">{{ titreProjet }}</h3>
+        <img src="">
     </div>
 </template>
 
@@ -44,7 +25,7 @@
         
     }
 
-    .titre3{
+    .titre__projet{
         font-family: 'Robot';
         text-decoration: underline;
 

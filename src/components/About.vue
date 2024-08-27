@@ -30,6 +30,7 @@
     }
   
   p{
+        padding: 0 20px;
         font-family: 'Jura';
         font-weight: 600;
         width:50%;
