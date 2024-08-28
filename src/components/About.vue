@@ -18,7 +18,6 @@
 </template>
 
 <style scoped>
-
   .about{
        padding: 20px;
     }
@@ -27,6 +26,7 @@
         font-family: 'Robot';
         font-size: 2.5rem;
         padding: 2.5rem 0;
+        text-shadow: 5px 5px 5px rgb(200, 200, 200);     
     }
   
   p{

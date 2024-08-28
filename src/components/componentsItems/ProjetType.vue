@@ -1,16 +1,10 @@
 <script setup>
- defineProps({
-    titreProjet:{
-        type: String
-    }
-})
+ 
+
 </script>
 
 <template>
-    <div class="projet__type">
-        <h3 class="titre__projet">{{ titreProjet }}</h3>
-        <img src="">
-    </div>
+
 </template>
 
 <style scoped>
