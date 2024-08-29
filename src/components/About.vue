@@ -1,5 +1,5 @@
 <script setup>
-  import Titre2 from '@/components/componentsItems/Titre2.vue';
+  import Titre2 from '@/components/componentsItems/Title2.vue';
 </script>
 
 <template>

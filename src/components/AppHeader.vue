@@ -8,7 +8,7 @@
         <div class="nav__div">
             <ul class="nav__links">
                 <li ><router-link to="/#about">Présentation</router-link></li>
-                <li><router-link to="/#projet">Projets</router-link></li>
+                <li><router-link to="/#project">Projets</router-link></li>
                 <li><router-link to="/#contact">Contact</router-link></li>
             </ul>
         </div>

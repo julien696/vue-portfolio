@@ -1,14 +1,13 @@
 <script setup>
- 
 
 </script>
 
 <template>
-
+  
 </template>
 
 <style scoped>
-    .projet__type{
+    .project__type{
         width: 33%;
         display: flex;
         flex-direction: column;
@@ -19,7 +18,7 @@
         
     }
 
-    .titre__projet{
+    .title__project{
         font-family: 'Robot';
         text-decoration: underline;
 
@@ -31,12 +30,12 @@
         font-weight: 600;
     }
 
-    .projet__type:hover{
+    .project__type:hover{
         box-shadow:12px 12px 12px rgba(0, 0, 0, 0.5);
     }
     
     @media screen and (max-width: 650px){
-        .projet__type{
+        .project__type{
           width: 100%;
         }
     }
