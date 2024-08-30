@@ -6,7 +6,7 @@
   <div id="about" class="about">
     <h1>Hello world</h1>
     <div >
-      <Titre2 msg="Présentation"  />
+      <Titre2 msg="Présentation" />
       <p>
         Coucou moi c'est Julien chauvin, développeur web débutant en formation au CEF depuis avril 2024. Malgrés ma jeune expérience
         j'ai déja une bonne matrise en html et css ainsi que des connaissance en javaScript. J'ai plaisir à vous présenter mes premiers
