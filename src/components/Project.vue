@@ -1,11 +1,10 @@
 <script setup>
     import Title2 from './componentsItems/Title2.vue';
-    /*import { dataProjects } from '@/store/dataProjects';*/
     import { ref } from 'vue';
 
     const projects = ref([
-    {
-            id:1,
+        {   
+            id: 1,
             title: 'CV en ligne',
             imageSrc: 'src/assets/img/image-cv.PNG',
             imageAlt: 'cv en ligne de Julien Chauvin',
@@ -13,8 +12,9 @@
             technology: ["HTML","CSS"],
             url: 'https://github.com/julien696/CV',
         },
+
         {
-            id:2,
+            id: 2,
             title: 'Cahier des charges La Socketterie',
             imageSrc: 'src/assets/img/image-cdc.png',
             imageAlt: 'page de présentation du cahier des charges pour La Socketterie',
@@ -24,7 +24,7 @@
         },
 
         {
-            id:3,
+            id: 3,
             title: 'Dynamiser un espace commentaire',
             imageSrc: 'src/assets/img/image-espace-com.png',
             imageAlt: 'formulaire pour ajouter un commentaire', 
@@ -32,10 +32,7 @@
             technology: 'Javascript',
             url: 'https://github.com/julien696/dynamiserUnEspaceDeCommentaires',
         },    
-    ])
-   /* const projects = ref(dataProjects().projects);
-    console.log(projects);*/
-  
+    ]);
 
 </script>
 
@@ -43,7 +40,7 @@
     <div class="div">
         <Title2 msg="Projets" />     
         <div id="project" class="div__project" >
-            <div v-for="project in projects" class="div__project__projects">
+            <div v-for="project in projects" key="project" class="div__project__projects">
                 <img :src="project.imageSrc" :alt="project.imageAlt" class="div__project__img">
                 <br /> 
                 <br /> 
@@ -60,11 +57,14 @@
     .div{
         padding: 20px;
         margin-bottom: 20px ;
+        
     }
 
     .div__project{
         display: flex;
         box-sizing: border-box;
+        padding-top: 20px;
+
     }
 
     .div__project__projects{
