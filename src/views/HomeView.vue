@@ -4,8 +4,8 @@
 </script>
 
 <template>
-  <main>
+  
     <About/>
     <Project/>
-  </main>
+
 </template>
