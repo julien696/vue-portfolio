@@ -12,7 +12,7 @@
             </a>
         </div>
         <div class="div__time">
-            <span class="span__footer"><small>© Derniére mise à jour <time datetime="2024/08/28">28 aout 2024</time></small></span>
+            <span class="span__footer"><small>© Derniére mise à jour <time datetime="2024/09/09">9 septembre 2024</time></small></span>
         </div>
     </div>
 </template>

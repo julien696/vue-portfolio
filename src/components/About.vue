@@ -8,7 +8,7 @@
       <div >
         <Titre2 msg="Présentation" />
         <p>
-          Coucou moi c'est Julien chauvin, développeur web débutant en formation au CEF depuis avril 2024.
+          Coucou, moi c'est Julien chauvin, développeur web débutant en formation au CEF depuis avril 2024.
           J'ai plaisir à vous présenter mes premiers projets.        
         </p>
         <div class="technology">
