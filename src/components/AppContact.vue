@@ -1,6 +1,7 @@
 <script setup>
     import Title2 from './componentsItems/Title2.vue';
-    import { ref } from 'vue';
+    import emailjs from 'emailjs-com';
+    import { ref } from 'vue'; 
 
     const user = {
         lastname: '',
@@ -10,22 +11,24 @@
         message: '',
     };
 
-
     const error = ref(false);
 
-    const messageError =  (event) => {
-        if(user.lastname.length < 1 || user.firstname.length < 1 || user.email.length < 1 || 
-        user.object.length < 1 || user.message.length < 1)
-        {     
-             error.value = true;
-            event.target.reset();
-        }else{
-            error.value = false;
-            event.target.reset();
-        }
-    }
 
-  
+    const sendMail= (e) =>{
+        if(user.lastname.length < 1 || user.firstname.length < 1 || user.email.length < 1 || user.object.length < 1 || user.message.length < 1){
+            error.value = true;
+        }else{
+        emailjs.sendForm('service_sker7pi', 'template_6391522', e.target, 'iATGYypLhXjZcGLpS', {
+          name: user.lastname,
+          firstname:user.firstname,
+          email: user.email,
+          object:user.object,
+          message: user.message
+        })
+        alert("votre message est bien envoyé");}
+        
+        e.target.reset();
+    }
  
 </script>
 
@@ -40,7 +43,7 @@
             </div>
         </div>
         <div class="div__form">
-            <form action="#"  method="post" id="contact" class="form" @submit.prevent="messageError" >
+            <form action="#"  method="post" id="contact" class="form" @submit.prevent="sendMail" >
                 <input v-model="user.lastname" id="lastname" placeholder="Nom" name="lastname" class="lastname">
                 <input v-model.trim="user.firstname" id="firstname" placeholder="Prénom" name="firstname" class="firstname">
                 <input v-model.trim="user.email" id="email" placeholder="Email" name="mail" class="email" >
