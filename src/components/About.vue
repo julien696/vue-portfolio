@@ -62,4 +62,14 @@
     font-family:"Robot";
     }
 
+    @media screen and (max-width:900px) {
+      h1{
+        font-size: 1.7rem;
+      }
+
+      p{
+        font-size: 0.8rem;
+      }
+    }
+
 </style>
