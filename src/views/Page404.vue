@@ -8,7 +8,7 @@
             404
        </h2>
        <span class="error__message">
-            click sur bili
+            Clique sur Bili
        </span>
     </div>
 </template>

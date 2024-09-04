@@ -18,12 +18,13 @@
         if(user.lastname.length < 1 || user.firstname.length < 1 || user.email.length < 1 || user.object.length < 1 || user.message.length < 1){
             error.value = true;
         }else{
-        emailjs.sendForm('service_sker7pi', 'template_6391522', e.target, 'iATGYypLhXjZcGLpS', {
-          name: user.lastname,
-          firstname:user.firstname,
-          email: user.email,
-          object:user.object,
-          message: user.message
+            error.value = false;
+            emailjs.sendForm('service_sker7pi', 'template_6391522', e.target, 'iATGYypLhXjZcGLpS', {
+            name: user.lastname,
+            firstname:user.firstname,
+            email: user.email,
+            object:user.object,
+            message: user.message
         })
         alert("votre message est bien envoyé");}
         
@@ -33,7 +34,7 @@
 </script>
 
 <template>
-    <div class="div__contact" id="contact">
+    <section class="section__contact" id="contact">
         <Title2 msg="Contact"/>
         <div class="div__message__error" v-if="error">
             <div class="message__error">
@@ -52,12 +53,12 @@
                 <button type="submit" class="button" >Envoyer</button>
             </form>
         </div>    
-    </div>
+    </section>
 </template>
 
 <style>
 
-    .div__contact{
+    .section__contact{
         padding: 20px;
     }
 

@@ -1,29 +1,36 @@
 # vue-portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Portfolio réalisé avec Vuejs 3.
 
-## Recommended IDE Setup
+![Aperçu du projet](/src/assets/img/CaptureProjet.PNG)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Technologies utilisées`
 
-## Customize configuration
+* Vuejs 3 avec Vue router
+* Librairie EmailJs
+* NodeJs
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Pour installer le projet
 
-## Project Setup
+- Entrer URL du git clone dans le terminal d'un dossier
+```sh
+git clone https://github.com/julien696/vue-portfolio.git
+```
 
+- Entrer dans le dossier cloner
+```sh
+cd vue-portfolio
+```
+
+- Installation de Nodejs
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
+- Lancer le projet
 ```sh
 npm run dev
 ```
+- Vous pouvez consultez le projet dans votre navigateur sur  http://localhost:5174/
 
-### Compile and Minify for Production
 
-```sh
-npm run build
-```

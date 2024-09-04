@@ -35,7 +35,8 @@ header{
     border: 1px solid whitesmoke;
     border-radius: 20px;
     box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5),
-    -10px -10px 10px white;    
+    -10px -10px 10px white;
+    background-color: whitesmoke;    
 }
  
 
