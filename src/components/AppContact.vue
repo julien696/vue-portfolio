@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="div__form">
-            <form action="#"  method="post" id="contact" class="form" @submit.prevent="sendMail" >
+            <form action="#"  method="post" id="form" class="form" @submit.prevent="sendMail" >
                 <input v-model="user.lastname" id="lastname" placeholder="Nom" name="lastname" class="lastname">
                 <input v-model.trim="user.firstname" id="firstname" placeholder="Prénom" name="firstname" class="firstname">
                 <input v-model.trim="user.email" id="email" placeholder="Email" name="mail" class="email" >
