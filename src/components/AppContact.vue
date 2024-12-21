@@ -18,8 +18,7 @@
         if(user.lastname.length < 1 || user.firstname.length < 1 || user.email.length < 1 || user.object.length < 1 || user.message.length < 1){
             error.value = true;
         }else{
-            error.value = false;
-            emailjs.sendForm('service_sker7pi', 'template_6391522', e.target, 'iATGYypLhXjZcGLpS', {
+            error.value =  {
             name: user.lastname,
             firstname:user.firstname,
             email: user.email,
